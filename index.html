@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitaCare Kénitra — الرعاية التمريضية في المنزل | Soins Infirmiers à Domicile</title>
+<meta name="description" content="VitaCare Kénitra — رعاية تمريضية احترافية في منزلك بالقنيطرة والنواحي. حقن، ضمادات، سحب الدم، متابعة العلامات الحيوية ورعاية كبار السن. متوفرون 7/7. Soins infirmiers professionnels à domicile à Kénitra.">
+<meta name="theme-color" content="#0e2e4d">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="VitaCare Kénitra — Soins Infirmiers à Domicile">
+<meta property="og:description" content="رعايتكم في منزلكم... راحتكم أولويتنا. رعاية تمريضية احترافية بالقنيطرة والنواحي، متوفرون 7/7.">
+<meta property="og:image" content="733309954_1377143797605910_8797028008840610632_n.jpg">
+
+<link rel="icon" href="733309954_1377143797605910_8797028008840610632_n.jpg">
+
+<!-- Fonts: Cairo/Tajawal for Arabic, Poppins for Latin/French -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<!-- Schema.org : MedicalBusiness local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "VitaCare Kénitra — Soins Infirmiers à Domicile",
+  "description": "Soins infirmiers professionnels à domicile à Kénitra et alentours : injections, pansements, prélèvements sanguins, suivi des personnes âgées.",
+  "telephone": "+212654880254",
+  "email": "Vitacare.soins@gmail.com",
+  "areaServed": "Kénitra, Maroc",
+  "address": { "@type": "PostalAddress", "addressLocality": "Kénitra", "addressCountry": "MA" },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "priceRange": "$$",
+  "image": "733309954_1377143797605910_8797028008840610632_n.jpg"
+}
+</script>
+
+<style>
+:root{
+  --navy:#0e2e4d;
+  --navy-2:#123c63;
+  --teal:#178a8f;
+  --teal-2:#20a5aa;
+  --teal-soft:#e6f5f5;
+  --teal-tint:#f2fafa;
+  --wa:#25d366;
+  --ink:#233240;
+  --muted:#5f7183;
+  --line:#e4edf1;
+  --bg:#ffffff;
+  --bg-soft:#f6fbfb;
+  --shadow:0 18px 50px -20px rgba(14,46,77,.28);
+  --shadow-sm:0 8px 24px -12px rgba(14,46,77,.25);
+  --radius:22px;
+  --font-ar:'Cairo','Tajawal',sans-serif;
+  --font-fr:'Poppins',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-ar);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+html[lang="fr"] body{font-family:var(--font-fr)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{position:relative}
+
+/* language visibility — attribute-scoped so the visible language keeps its
+   natural display (block/inline) and always wins over element+class rules */
+html[lang="ar"] .lang-fr{display:none}
+html[lang="fr"] .lang-ar{display:none}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:50px;height:50px;border-radius:50%;box-shadow:var(--shadow-sm)}
+.brand b{font-size:1.22rem;color:var(--navy);font-weight:800;letter-spacing:.2px}
+.brand span{display:block;font-size:.66rem;color:var(--teal);font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+html[lang="fr"] .brand b{font-family:var(--font-fr)}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-weight:700;font-size:.96rem;color:var(--navy);opacity:.85;transition:.2s}
+.nav-links a:hover{opacity:1;color:var(--teal)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.lang-toggle{
+  display:flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;
+  overflow:hidden;font-weight:700;font-size:.82rem;background:#fff;
+}
+.lang-toggle button{
+  background:none;border:none;padding:7px 14px;cursor:pointer;color:var(--muted);
+  font-family:inherit;font-weight:700;transition:.2s;
+}
+.lang-toggle button.active{background:var(--teal);color:#fff}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;border-radius:999px;padding:12px 22px;
+  font-weight:800;font-size:.95rem;cursor:pointer;border:none;transition:transform .15s, box-shadow .2s;
+  font-family:inherit;white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -10px rgba(37,211,102,.7)}
+.btn-teal{background:linear-gradient(135deg,var(--teal-2),var(--teal));color:#fff;box-shadow:0 10px 26px -10px rgba(23,138,143,.75)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn-lg{padding:16px 30px;font-size:1.02rem}
+.nav-call{display:none}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{display:block;width:26px;height:2.5px;background:var(--navy);border-radius:3px;margin:5px 0;transition:.3s}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(1100px 500px at 85% -10%, rgba(32,165,170,.16), transparent 60%),
+    radial-gradient(900px 500px at 0% 110%, rgba(14,46,77,.07), transparent 55%),
+    linear-gradient(180deg,#fff, var(--bg-soft));
+  padding:64px 0 30px;overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;background:var(--teal-soft);color:var(--teal);
+  font-weight:800;font-size:.82rem;padding:8px 16px;border-radius:999px;margin-bottom:20px;
+}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(23,138,143,.18)}
+h1{
+  font-size:clamp(2.1rem,4.6vw,3.5rem);line-height:1.18;color:var(--navy);font-weight:900;
+  letter-spacing:-.5px;margin-bottom:18px;
+}
+h1 .hl{color:var(--teal);position:relative;white-space:nowrap}
+.hero-sub{font-size:1.12rem;color:var(--muted);max-width:540px;margin-bottom:14px}
+.hero-slogan{font-size:1.16rem;color:var(--navy);font-weight:800;margin-bottom:28px}
+.hero-slogan .heart{color:var(--teal)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:9px 16px;font-weight:700;font-size:.86rem;color:var(--navy);box-shadow:var(--shadow-sm);
+}
+.chip svg{width:17px;height:17px;color:var(--teal);flex-shrink:0}
+
+/* desktop brand banner hero (hidden on mobile) */
+.hero-banner{display:none}
+.hero-banner-cta{display:none}
+
+/* hero visual — real photo */
+.hero-visual{position:relative;display:flex;justify-content:center}
+.hero-photo{
+  position:relative;width:100%;max-width:440px;border-radius:34px;overflow:hidden;
+  box-shadow:var(--shadow);border:6px solid #fff;aspect-ratio:896/1200;background:var(--teal-soft);
+}
+.hero-photo>img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,37,64,.55),rgba(10,37,64,0) 42%)}
+.photo-logo{
+  position:absolute;top:16px;inset-inline-start:16px;z-index:3;display:flex;align-items:center;gap:9px;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(6px);padding:6px 14px 6px 6px;border-radius:999px;box-shadow:var(--shadow-sm);
+}
+.photo-logo img{width:34px;height:34px;border-radius:50%}
+.photo-logo b{font-size:.86rem;color:var(--navy);font-weight:800}
+.photo-stats{
+  position:absolute;bottom:16px;inset-inline:16px;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-radius:18px;padding:13px 6px;text-align:center;box-shadow:var(--shadow-sm);
+}
+.photo-stats .s b{display:block;font-size:1.3rem;color:var(--teal);font-weight:900;font-family:var(--font-fr);line-height:1.1}
+.photo-stats .s span{font-size:.72rem;color:var(--muted);font-weight:700}
+.float-badge{
+  position:absolute;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:10px;font-weight:800;font-size:.85rem;color:var(--navy);border:1px solid var(--line);
+}
+.float-badge .ic{width:36px;height:36px;border-radius:11px;background:var(--teal-soft);display:grid;place-items:center;color:var(--teal)}
+.float-badge.b1{top:74px;inset-inline-start:-26px;animation:floaty 4s ease-in-out infinite}
+.float-badge.b2{top:44%;inset-inline-end:-22px;animation:floaty 4s ease-in-out infinite .8s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* ---------- Trust strip ---------- */
+.trust-strip{background:var(--navy);color:#fff;padding:22px 0}
+.trust-strip .wrap{display:flex;justify-content:space-around;gap:20px;flex-wrap:wrap;text-align:center}
+.trust-strip .t{display:flex;align-items:center;gap:12px;font-weight:700}
+.trust-strip .t svg{width:26px;height:26px;color:var(--teal-2)}
+.trust-strip .t small{display:block;font-size:.76rem;opacity:.7;font-weight:600}
+
+/* ---------- Section heading ---------- */
+.sec{padding:80px 0}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 48px}
+.sec-tag{color:var(--teal);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.8rem;margin-bottom:12px;display:block}
+.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--navy);font-weight:900;line-height:1.25;margin-bottom:14px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* ---------- Emotional band ---------- */
+.emo{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff;padding:66px 0;text-align:center}
+.emo h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;max-width:820px;margin:0 auto 16px;line-height:1.4}
+.emo h2 .hl{color:var(--teal-2)}
+.emo p{opacity:.85;max-width:640px;margin:0 auto;font-size:1.08rem}
+
+/* ---------- Services ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
+  transition:transform .25s, box-shadow .25s, border-color .25s;position:relative;overflow:hidden;
+}
+.card::before{content:"";position:absolute;inset-inline-start:0;top:0;height:100%;width:4px;background:var(--teal);transform:scaleY(0);transform-origin:top;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.card:hover::before{transform:scaleY(1)}
+.card .ic{
+  width:56px;height:56px;border-radius:16px;background:var(--teal-soft);color:var(--teal);
+  display:grid;place-items:center;margin-bottom:18px;transition:.3s;
+}
+.card:hover .ic{background:var(--teal);color:#fff;transform:rotate(-6deg)}
+.card .ic svg{width:28px;height:28px}
+.card h3{font-size:1.14rem;color:var(--navy);font-weight:800;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+
+/* ---------- Home assistance (split) ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.assist-list{list-style:none;display:grid;gap:14px}
+.assist-list li{display:flex;gap:14px;align-items:flex-start;background:var(--bg-soft);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.assist-list .ck{width:30px;height:30px;border-radius:9px;background:var(--teal);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.assist-list .ck svg{width:17px;height:17px}
+.assist-list b{color:var(--navy);font-weight:800;display:block}
+.assist-list span{color:var(--muted);font-size:.9rem}
+.split-visual{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);min-height:420px;background:linear-gradient(160deg,var(--teal-soft),#fff)}
+.split-visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+
+/* ---------- Why us ---------- */
+.why{background:var(--bg-soft)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why-c{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px;text-align:center;transition:.25s}
+.why-c:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.why-c .ic{width:62px;height:62px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--teal-2),var(--teal));color:#fff}
+.why-c .ic svg{width:30px;height:30px}
+.why-c h3{color:var(--navy);font-weight:800;font-size:1.08rem;margin-bottom:8px}
+.why-c p{color:var(--muted);font-size:.92rem}
+
+/* ---------- Steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 26px;text-align:center;position:relative}
+.step .num{
+  counter-increment:step;width:56px;height:56px;border-radius:50%;margin:0 auto 18px;
+  background:var(--navy);color:#fff;display:grid;place-items:center;font-size:1.4rem;font-weight:900;font-family:var(--font-fr);
+}
+.step .num::before{content:counter(step)}
+.step h3{color:var(--navy);font-weight:800;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.94rem}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery a{border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);aspect-ratio:1;transition:.25s;border:1px solid var(--line)}
+.gallery a:hover{transform:scale(1.03);box-shadow:var(--shadow)}
+.gallery img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- Quote ---------- */
+.quote{background:linear-gradient(120deg,var(--teal),var(--teal-2));color:#fff;text-align:center;padding:70px 0}
+.quote .mark{font-size:4rem;line-height:.5;opacity:.4;font-family:Georgia,serif}
+.quote p{font-size:clamp(1.3rem,3vw,2rem);font-weight:800;max-width:760px;margin:12px auto;line-height:1.5}
+.quote small{opacity:.9;font-weight:700;letter-spacing:1px}
+
+/* ---------- Contact / CTA ---------- */
+.contact{background:var(--navy);color:#fff;padding:80px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.contact h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:900;margin-bottom:16px;line-height:1.3}
+.contact h2 .hl{color:var(--teal-2)}
+.contact .lead{opacity:.85;margin-bottom:28px;font-size:1.06rem}
+.contact-info{display:grid;gap:14px;margin-bottom:28px}
+.ci{display:flex;align-items:center;gap:14px}
+.ci .ic{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--teal-2);flex-shrink:0}
+.ci .ic svg{width:22px;height:22px}
+.ci b{display:block;font-weight:800}
+.ci span{opacity:.7;font-size:.88rem}
+.socials{display:flex;gap:12px}
+.socials a{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.1);display:grid;place-items:center;transition:.2s}
+.socials a:hover{background:var(--teal);transform:translateY(-3px)}
+.socials svg{width:22px;height:22px;color:#fff}
+.form-card{background:#fff;color:var(--ink);border-radius:26px;padding:32px;box-shadow:var(--shadow)}
+.form-card{transition:box-shadow .3s, transform .3s}
+.form-card.flash{box-shadow:0 0 0 4px var(--teal-2), var(--shadow);transform:translateY(-4px)}
+.form-card h3{color:var(--navy);font-weight:900;font-size:1.3rem;margin-bottom:6px}
+.form-card .fsub{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:700;font-size:.86rem;color:var(--navy);margin-bottom:6px}
+.field input,.field select,.field textarea{
+  width:100%;border:1.5px solid var(--line);border-radius:13px;padding:13px 15px;font-family:inherit;
+  font-size:.96rem;color:var(--ink);background:var(--bg-soft);transition:.2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);background:#fff;box-shadow:0 0 0 4px rgba(23,138,143,.1)}
+.form-card .btn{width:100%;justify-content:center;margin-top:6px}
+.form-note{text-align:center;font-size:.8rem;color:var(--muted);margin-top:12px}
+
+/* ---------- Footer ---------- */
+footer{background:#0a2540;color:#fff;padding:44px 0 26px;text-align:center}
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:14px}
+.footer-brand img{width:48px;height:48px;border-radius:50%}
+.footer-brand b{font-size:1.2rem;font-weight:800}
+.footer-slogan{opacity:.7;margin-bottom:20px}
+.footer-links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:22px;font-weight:700;font-size:.92rem}
+.footer-links a{opacity:.8}.footer-links a:hover{opacity:1;color:var(--teal-2)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;opacity:.55;font-size:.82rem}
+
+/* ---------- Floating WhatsApp ---------- */
+.fab{
+  position:fixed;bottom:24px;inset-inline-end:24px;z-index:90;width:60px;height:60px;border-radius:50%;
+  background:var(--wa);display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);
+  animation:pulse 2.4s infinite;
+}
+.fab svg{width:32px;height:32px;color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .hero-grid,.split,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .hero-visual{order:-1}
+  .cards,.why-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .split-visual{min-height:300px}
+}
+@media(max-width:920px){
+  .nav-links{
+    position:fixed;top:74px;inset-inline:0;background:#fff;flex-direction:column;padding:20px;gap:16px;
+    border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;box-shadow:var(--shadow);
+  }
+  .nav-links.open{transform:translateY(0)}
+  .burger{display:block}
+  /* lighter mobile hero — less text, not crowded */
+  .hero-sub,.hero-chips{display:none}
+  .hero-slogan{margin-bottom:22px}
+}
+/* desktop: show rich banner, hide the text grid */
+@media(min-width:921px){
+  .hero-banner{
+    display:block;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);
+    border:1px solid var(--line);transition:transform .2s, box-shadow .25s;
+  }
+  .hero-banner:hover{transform:translateY(-3px);box-shadow:0 28px 64px -22px rgba(14,46,77,.42)}
+  .hero-banner img{width:100%;display:block}
+  .hero-banner-cta{display:flex;gap:14px;justify-content:center;margin-top:24px}
+  .hero-grid{display:none}
+}
+@media(max-width:640px){
+  .cards,.why-grid,.gallery{grid-template-columns:1fr 1fr}
+  .mini-stats{grid-template-columns:repeat(3,1fr)}
+  .float-badge{display:none}
+  .sec{padding:56px 0}
+  .hero{padding:40px 0 20px}
+  .nav-actions .btn-teal{display:none}
+}
+@media(max-width:400px){
+  .cards,.why-grid,.gallery{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand">
+      <img src="733309954_1377143797605910_8797028008840610632_n.jpg" alt="VitaCare Kénitra logo">
+      <div>
+        <b>VitaCare</b>
+        <span>Kénitra · Soins à domicile</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services" class="lang-ar">خدماتنا</a><a href="#services" class="lang-fr">Services</a>
+      <a href="#why" class="lang-ar">لماذا نحن</a><a href="#why" class="lang-fr">Pourquoi nous</a>
+      <a href="#steps" class="lang-ar">كيف نعمل</a><a href="#steps" class="lang-fr">Comment ça marche</a>
+      <a href="#gallery" class="lang-ar">أعمالنا</a><a href="#gallery" class="lang-fr">Galerie</a>
+      <a href="#contact" class="lang-ar">اتصل بنا</a><a href="#contact" class="lang-fr">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button data-lang="ar" class="active">ع</button>
+        <button data-lang="fr">FR</button>
+      </div>
+      <a href="#reserver" class="btn btn-teal js-to-form">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="lang-ar">احجز الآن</span><span class="lang-fr">Réserver</span>
+      </a>
+      <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <!-- Desktop: rich brand banner as hero (hidden on mobile) -->
+    <a class="hero-banner js-to-form" href="#reserver" aria-label="VitaCare — احجز زيارة / Réserver">
+      <img src="734218421_1377143864272570_1559349818398473531_n.jpg" alt="VitaCare Kénitra — Soins Infirmiers à Domicile">
+    </a>
+    <div class="hero-banner-cta">
+      <a class="btn btn-wa btn-lg js-to-form" href="#reserver">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5H8a1 1 0 0 0-.8.4c-.3.3-1 1-1 2.4s1 2.8 1.2 3 2 3.1 4.9 4.3c2.4 1 2.9.8 3.4.8s1.7-.7 2-1.4c.2-.7.2-1.2.1-1.4l-.4-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/></svg>
+        <span class="lang-ar">اطلب زيارة عبر واتساب</span><span class="lang-fr">Demander via WhatsApp</span>
+      </a>
+      <a class="btn btn-ghost btn-lg" href="tel:+212654880254">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z" fill="var(--teal)"/></svg>
+        0654880254
+      </a>
+    </div>
+
+    <!-- Mobile: light text hero (hidden on desktop) -->
+    <div class="hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow"><span class="dot"></span>
+        <span class="lang-ar">القنيطرة والنواحي · متوفرون 7/7</span>
+        <span class="lang-fr">Kénitra & alentours · Disponibles 7J/7</span>
+      </span>
+      <h1>
+        <span class="lang-ar">الرعاية التمريضية <span class="hl">في منزلك</span>، بأيادٍ أمينة</span>
+        <span class="lang-fr">Des soins infirmiers <span class="hl">à domicile</span>, avec le cœur</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="lang-ar">فريق ممرضين مؤهلين يزوركم في بيتكم لتقديم رعاية طبية احترافية، بلطف واحترام. لأن راحة من تحبون تبدأ من المنزل.</span>
+        <span class="lang-fr">Une équipe d'infirmiers qualifiés se déplace chez vous pour des soins médicaux professionnels, avec douceur et respect. Parce que le bien-être de vos proches commence à la maison.</span>
+      </p>
+      <p class="hero-slogan">
+        <span class="lang-ar">رعايتكم في منزلكم <span class="heart">♥</span> راحتكم أولويتنا</span>
+        <span class="lang-fr">Des soins professionnels, <span class="heart">♥</span> au cœur de votre domicile</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-wa btn-lg js-to-form" href="#reserver">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5H8a1 1 0 0 0-.8.4c-.3.3-1 1-1 2.4s1 2.8 1.2 3 2 3.1 4.9 4.3c2.4 1 2.9.8 3.4.8s1.7-.7 2-1.4c.2-.7.2-1.2.1-1.4l-.4-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/></svg>
+          <span class="lang-ar">اطلب زيارة عبر واتساب</span><span class="lang-fr">Demander via WhatsApp</span>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="tel:+212654880254">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z" fill="var(--teal)"/></svg>
+          0654880254
+        </a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-ar">ممرضون مؤهلون</span><span class="lang-fr">Infirmiers diplômés</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-ar">تدخل سريع</span><span class="lang-fr">Intervention rapide</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-ar">سرية تامة</span><span class="lang-fr">Confidentialité totale</span></span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-photo">
+        <img src="hero-1.jpg" alt="ممرض VitaCare يعتني بمريض مسن في منزله بالقنيطرة">
+        <div class="photo-logo">
+          <img src="733309954_1377143797605910_8797028008840610632_n.jpg" alt="VitaCare">
+          <b>VitaCare Kénitra</b>
+        </div>
+        <div class="photo-stats">
+          <div class="s"><b>7/7</b><span class="lang-ar">متوفرون</span><span class="lang-fr">Disponibles</span></div>
+          <div class="s"><b>100%</b><span class="lang-ar">في منزلك</span><span class="lang-fr">À domicile</span></div>
+          <div class="s"><b>♥</b><span class="lang-ar">رعاية إنسانية</span><span class="lang-fr">Bienveillance</span></div>
+        </div>
+      </div>
+      <div class="float-badge b1">
+        <div class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 21s-7-4.4-9.3-8.4A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6.6C19 16.6 12 21 12 21Z" fill="currentColor"/></svg></div>
+        <div><span class="lang-ar">رعاية باحترام</span><span class="lang-fr">Soin & respect</span></div>
+      </div>
+      <div class="float-badge b2">
+        <div class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div><span class="lang-ar">جودة مضمونة</span><span class="lang-fr">Qualité garantie</span></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust-strip">
+  <div class="wrap">
+    <div class="t"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V5l-8-3Z" stroke="currentColor" stroke-width="2"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b class="lang-ar">احترافية عالية</b><b class="lang-fr">Professionnalisme</b></div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-9.3-8.4A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6.6C19 16.6 12 21 12 21Z" stroke="currentColor" stroke-width="2"/></svg><div><b class="lang-ar">رعاية إنسانية</b><b class="lang-fr">Bienveillance</b></div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="2"/></svg><div><b class="lang-ar">خصوصية تامة</b><b class="lang-fr">Confidentialité</b></div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><b class="lang-ar">التزام بالمواعيد</b><b class="lang-fr">Ponctualité</b></div></div>
+  </div>
+</div>
+
+<!-- ============ EMOTIONAL BAND ============ -->
+<section class="emo">
+  <div class="wrap">
+    <h2>
+      <span class="lang-ar">لا داعي للتنقل والانتظار في المستشفيات. <span class="hl">نأتي نحن إليكم.</span></span>
+      <span class="lang-fr">Plus besoin de vous déplacer ni d'attendre à l'hôpital. <span class="hl">C'est nous qui venons à vous.</span></span>
+    </h2>
+    <p>
+      <span class="lang-ar">في البيت، بين أحبائك، يكون الشفاء أسرع والراحة أكبر. مهمتنا أن نجعل الرعاية الطبية قريبة، بسيطة، ومطمئنة.</span>
+      <span class="lang-fr">Chez soi, entouré des siens, on guérit mieux et plus sereinement. Notre mission : rendre le soin médical proche, simple et rassurant.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag lang-ar">خدماتنا التمريضية</span><span class="sec-tag lang-fr">Nos soins infirmiers</span>
+      <h2 class="lang-ar">رعاية طبية كاملة، تحت سقف منزلك</h2><h2 class="lang-fr">Des soins médicaux complets, sous votre toit</h2>
+      <p class="lang-ar">كل ما يحتاجه المريض من عناية تمريضية، يقدمه فريقنا بأمان واحترافية داخل المنزل.</p>
+      <p class="lang-fr">Tout ce dont un patient a besoin en soins infirmiers, assuré chez vous en toute sécurité.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="m18 2 4 4M17 7l3-3M11 21l-4-4m3-3-6 6M14 4l6 6-8 8-6-6 8-8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="lang-ar">الحقن بجميع أنواعها</h3><h3 class="lang-fr">Injections à domicile</h3>
+        <p class="lang-ar">حقن عضلية ووريدية وتحت الجلد حسب الوصفة الطبية، بأدوات معقمة.</p>
+        <p class="lang-fr">Injections IM, IV et sous-cutanées selon prescription, avec matériel stérile.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-3-3v6M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="lang-ar">تغيير الضمادات والعناية بالجروح</h3><h3 class="lang-fr">Pansements & soins de plaies</h3>
+        <p class="lang-ar">تنظيف الجروح، تغيير الضمادات ومتابعة الالتئام لتفادي المضاعفات.</p>
+        <p class="lang-fr">Nettoyage, réfection des pansements et suivi de la cicatrisation.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 2v6l-3.6 6.2A2 2 0 0 0 7 17h10a2 2 0 0 0 1.7-3L15 8V2M8 2h8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="lang-ar">سحب عينات الدم للتحاليل</h3><h3 class="lang-fr">Prélèvements sanguins</h3>
+        <p class="lang-ar">سحب الدم من المنزل للتحاليل المخبرية دون عناء التنقل.</p>
+        <p class="lang-fr">Prise de sang à domicile pour vos analyses, sans vous déplacer.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="lang-ar">متابعة العلامات الحيوية</h3><h3 class="lang-fr">Suivi diabète & tension</h3>
+        <p class="lang-ar">قياس الضغط، السكر والنبض ومتابعة منتظمة لحالتكم الصحية.</p>
+        <p class="lang-fr">Contrôle de la tension, glycémie et pouls avec suivi régulier.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="lang-ar">القسطرة البولية</h3><h3 class="lang-fr">Sonde urinaire</h3>
+        <p class="lang-ar">تركيب وتغيير القسطرة البولية بناءً على وصفة طبية وبتعقيم كامل.</p>
+        <p class="lang-fr">Pose et changement de sonde urinaire sur prescription, en asepsie.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2 6 4-12 2 6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="lang-ar">الوقاية من قرح الفراش</h3><h3 class="lang-fr">Prévention des escarres</h3>
+        <p class="lang-ar">عناية خاصة بالمرضى طريحي الفراش للوقاية من التقرحات ومعالجتها.</p>
+        <p class="lang-fr">Soins spécifiques pour les patients alités afin de prévenir les escarres.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="lang-ar">مرافقة ورعاية كبار السن</h3><h3 class="lang-fr">Accompagnement des seniors</h3>
+        <p class="lang-ar">رعاية يومية وإنسانية لكبار السن داخل المنزل مع الاهتمام والاستماع.</p>
+        <p class="lang-fr">Accompagnement quotidien et humain des personnes âgées à domicile.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="lang-ar">متابعة ما بعد العمليات</h3><h3 class="lang-fr">Suivi post-opératoire</h3>
+        <p class="lang-ar">متابعة المرضى بعد العمليات الجراحية لضمان تعافٍ آمن وسريع.</p>
+        <p class="lang-fr">Suivi des patients après chirurgie pour une convalescence sûre.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-9.3-8.4A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6.6C19 16.6 12 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3 class="lang-ar">توعية وإرشاد الأسرة</h3><h3 class="lang-fr">Conseils à la famille</h3>
+        <p class="lang-ar">نرشد أفراد الأسرة حول كيفية العناية بالمريض بين زياراتنا.</p>
+        <p class="lang-fr">Nous guidons la famille sur les bons gestes de soin entre nos visites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOME ASSISTANCE ============ -->
+<section class="sec" style="background:var(--bg-soft)">
+  <div class="wrap split">
+    <div>
+      <span class="sec-tag lang-ar">مساعدة منزلية</span><span class="sec-tag lang-fr">Aide à domicile</span>
+      <h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem);color:var(--navy);font-weight:900;line-height:1.3;margin-bottom:14px">
+        <span class="lang-ar">أكثر من مجرد رعاية طبية</span><span class="lang-fr">Bien plus que des soins médicaux</span>
+      </h2>
+      <p style="color:var(--muted);margin-bottom:26px">
+        <span class="lang-ar">لأن الكرامة تبدأ من التفاصيل اليومية، نرافق المريض في راحته وحياته اليومية.</span>
+        <span class="lang-fr">Parce que la dignité tient aussi aux petits gestes du quotidien, nous accompagnons le patient dans son confort de tous les jours.</span>
+      </p>
+      <ul class="assist-list">
+        <li><div class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b class="lang-ar">المساعدة في النظافة الشخصية</b><b class="lang-fr">Aide à l'hygiène personnelle</b><span class="lang-ar">عناية لطيفة تحفظ راحة المريض وكرامته.</span><span class="lang-fr">Des gestes doux qui préservent le confort et la dignité.</span></div></li>
+        <li><div class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b class="lang-ar">تغيير الملابس وأغطية السرير</b><b class="lang-fr">Change des vêtements et draps</b><span class="lang-ar">بيئة نظيفة ومريحة تساعد على التعافي.</span><span class="lang-fr">Un environnement propre qui favorise le rétablissement.</span></div></li>
+        <li><div class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b class="lang-ar">المساعدة في التنقل داخل المنزل</b><b class="lang-fr">Aide à la mobilité</b><span class="lang-ar">دعم آمن للحركة يقلل من خطر السقوط.</span><span class="lang-fr">Un soutien sûr pour réduire le risque de chute.</span></div></li>
+        <li><div class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b class="lang-ar">تحضير وجبات بسيطة حسب الحاجة</b><b class="lang-fr">Préparation de repas simples</b><span class="lang-ar">وجبات مناسبة لحالة المريض الصحية.</span><span class="lang-fr">Des repas adaptés à l'état de santé du patient.</span></div></li>
+      </ul>
+    </div>
+    <div class="split-visual">
+      <img src="hero-2.jpg" alt="ممرض VitaCare يرافق مريضاً مسناً في منزله">
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag lang-ar">لماذا تختار VitaCare</span><span class="sec-tag lang-fr">Pourquoi VitaCare</span>
+      <h2 class="lang-ar">راحة عائلتك... في أيادٍ نثق بها</h2><h2 class="lang-fr">La sérénité de votre famille, entre de bonnes mains</h2>
+      <p class="lang-ar">اخترنا أن نجعل من كل زيارة تجربة إنسانية قبل أن تكون خدمة طبية.</p>
+      <p class="lang-fr">Nous faisons de chaque visite une expérience humaine avant d'être un acte médical.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10.5 12 3l9 7.5M5 9v11h14V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3 class="lang-ar">رعاية مريحة وآمنة</h3><h3 class="lang-fr">Confortable & sûr</h3>
+        <p class="lang-ar">في بيئتك المألوفة، بعيداً عن ضغط المستشفيات.</p>
+        <p class="lang-fr">Dans votre cadre familier, loin du stress hospitalier.</p>
+      </div>
+      <div class="why-c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="2"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M16 15c2.3.4 4 2.3 4 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="lang-ar">فريق مؤهل وملتزم</h3><h3 class="lang-fr">Équipe qualifiée</h3>
+        <p class="lang-ar">ممرضون معتمدون بخبرة وحس إنساني عالٍ.</p>
+        <p class="lang-fr">Des infirmiers diplômés, expérimentés et humains.</p>
+      </div>
+      <div class="why-c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="lang-ar">مواعيد مرنة</h3><h3 class="lang-fr">Horaires flexibles</h3>
+        <p class="lang-ar">نتكيف مع احتياجاتك وأوقاتك، 7 أيام في الأسبوع.</p>
+        <p class="lang-fr">Nous nous adaptons à vos besoins, 7 jours sur 7.</p>
+      </div>
+      <div class="why-c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="lang-ar">تدخل سريع</h3><h3 class="lang-fr">Intervention rapide</h3>
+        <p class="lang-ar">حضور سريع داخل القنيطرة والنواحي عند الحاجة.</p>
+        <p class="lang-fr">Présence rapide à Kénitra et alentours en cas de besoin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="sec" id="steps">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag lang-ar">كيف نعمل</span><span class="sec-tag lang-fr">Comment ça marche</span>
+      <h2 class="lang-ar">ثلاث خطوات بسيطة نحو الراحة</h2><h2 class="lang-fr">3 étapes simples vers la sérénité</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num"></div>
+        <h3 class="lang-ar">تواصل معنا</h3><h3 class="lang-fr">Contactez-nous</h3>
+        <p class="lang-ar">اتصل أو راسلنا عبر واتساب واشرح لنا حالتك واحتياجك.</p>
+        <p class="lang-fr">Appelez ou écrivez-nous sur WhatsApp en décrivant votre besoin.</p>
+      </div>
+      <div class="step">
+        <div class="num"></div>
+        <h3 class="lang-ar">نحدد موعداً</h3><h3 class="lang-fr">On fixe un rendez-vous</h3>
+        <p class="lang-ar">نتفق على الوقت المناسب لكم ونجهز كل ما يلزم للزيارة.</p>
+        <p class="lang-fr">Nous convenons de l'horaire qui vous convient et préparons la visite.</p>
+      </div>
+      <div class="step">
+        <div class="num"></div>
+        <h3 class="lang-ar">نأتي إليكم</h3><h3 class="lang-fr">On vient chez vous</h3>
+        <p class="lang-ar">يزوركم ممرضنا في المنزل ويقدم الرعاية باحترافية ولطف.</p>
+        <p class="lang-fr">Notre infirmier se déplace et assure les soins avec professionnalisme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="sec" id="gallery" style="background:var(--bg-soft)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag lang-ar">من صفحاتنا</span><span class="sec-tag lang-fr">Notre univers</span>
+      <h2 class="lang-ar">نصائح ورعاية نشاركها معكم كل يوم</h2><h2 class="lang-fr">Des conseils et du soin, partagés chaque jour</h2>
+      <p class="lang-ar">تابعونا على مواقع التواصل لمزيد من النصائح الصحية.</p>
+      <p class="lang-fr">Suivez-nous sur les réseaux pour plus de conseils santé.</p>
+    </div>
+    <div class="gallery">
+      <a href="https://www.facebook.com/share/1EwpqwcTvL/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="745393870_122108310573384318_6431892349766356523_n.jpg" alt="نصائح صحية VitaCare" loading="lazy"></a>
+      <a href="https://www.facebook.com/share/1EwpqwcTvL/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="734644867_122100591249384318_8831846325367251993_n.jpg" alt="رعاية كبار السن" loading="lazy"></a>
+      <a href="https://www.instagram.com/____vitacare.infirmier" target="_blank" rel="noopener"><img src="743744335_122106771087384318_2897590009416498807_n.jpg" alt="توعية صحية" loading="lazy"></a>
+      <a href="https://www.instagram.com/____vitacare.infirmier" target="_blank" rel="noopener"><img src="care-team.jpg" alt="ممرضة VitaCare تعتني بسيدة مسنة في منزلها" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote">
+  <div class="wrap">
+    <div class="mark">”</div>
+    <p class="lang-ar">العناية بمن نحب ليست واجباً فقط... بل هي رسالة إنسانية نؤمن بها.</p>
+    <p class="lang-fr">Prendre soin de ceux qu'on aime n'est pas qu'un devoir... c'est une mission humaine.</p>
+    <small>— VitaCare Kénitra</small>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2><span class="lang-ar">احجز زيارتك <span class="hl">اليوم</span></span><span class="lang-fr">Réservez votre visite <span class="hl">dès aujourd'hui</span></span></h2>
+      <p class="lead">
+        <span class="lang-ar">نحن هنا من أجلكم. تواصلوا معنا في أي وقت وسنكون بجانبكم في أقرب فرصة.</span>
+        <span class="lang-fr">Nous sommes là pour vous. Contactez-nous à tout moment, nous répondons rapidement.</span>
+      </p>
+      <div class="contact-info">
+        <a class="ci" href="tel:+212654880254">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z" fill="currentColor"/></svg></div>
+          <div><b>0654880254</b><span class="lang-ar">اتصال / واتساب</span><span class="lang-fr">Téléphone / WhatsApp</span></div>
+        </a>
+        <a class="ci" href="mailto:Vitacare.soins@gmail.com">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div><b>Vitacare.soins@gmail.com</b><span class="lang-ar">البريد الإلكتروني</span><span class="lang-fr">E-mail</span></div>
+        </a>
+        <div class="ci">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div><b class="lang-ar">القنيطرة والنواحي</b><b class="lang-fr">Kénitra & alentours</b><span class="lang-ar">المغرب · متوفرون 7/7</span><span class="lang-fr">Maroc · Disponibles 7J/7</span></div>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/1EwpqwcTvL/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+        <a href="https://www.instagram.com/____vitacare.infirmier" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a id="waSocial" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5H8a1 1 0 0 0-.8.4c-.3.3-1 1-1 2.4s1 2.8 1.2 3 2 3.1 4.9 4.3c2.4 1 2.9.8 3.4.8s1.7-.7 2-1.4c.2-.7.2-1.2.1-1.4l-.4-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/></svg></a>
+      </div>
+    </div>
+
+    <!-- WhatsApp order form -->
+    <div class="form-card" id="reserver">
+      <h3 class="lang-ar">اطلب زيارة تمريضية</h3><h3 class="lang-fr">Demander une visite</h3>
+      <p class="fsub lang-ar">املأ المعلومات وسنتواصل معك عبر واتساب فوراً.</p>
+      <p class="fsub lang-fr">Remplissez le formulaire, on vous répond aussitôt sur WhatsApp.</p>
+      <form id="waForm">
+        <div class="field">
+          <label class="lang-ar">الاسم الكامل</label><label class="lang-fr">Nom complet</label>
+          <input type="text" id="fName" required placeholder="...">
+        </div>
+        <div class="field">
+          <label class="lang-ar">نوع الخدمة</label><label class="lang-fr">Type de soin</label>
+          <select id="fService">
+            <option data-ar="حقن" data-fr="Injections">حقن / Injections</option>
+            <option data-ar="ضمادات وعناية بالجروح" data-fr="Pansements & plaies">ضمادات / Pansements</option>
+            <option data-ar="سحب الدم" data-fr="Prélèvement sanguin">سحب الدم / Prise de sang</option>
+            <option data-ar="متابعة الضغط والسكر" data-fr="Suivi tension & diabète">متابعة العلامات الحيوية</option>
+            <option data-ar="قسطرة بولية" data-fr="Sonde urinaire">قسطرة بولية / Sonde</option>
+            <option data-ar="رعاية كبار السن" data-fr="Soins personnes âgées">رعاية كبار السن</option>
+            <option data-ar="متابعة بعد العملية" data-fr="Suivi post-opératoire">متابعة بعد العملية</option>
+            <option data-ar="أخرى" data-fr="Autre">أخرى / Autre</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="lang-ar">العنوان / الحي بالقنيطرة</label><label class="lang-fr">Adresse / quartier à Kénitra</label>
+          <input type="text" id="fAddr" placeholder="...">
+        </div>
+        <div class="field">
+          <label class="lang-ar">تفاصيل إضافية (اختياري)</label><label class="lang-fr">Détails (optionnel)</label>
+          <textarea id="fMsg" rows="2" placeholder="..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5H8a1 1 0 0 0-.8.4c-.3.3-1 1-1 2.4s1 2.8 1.2 3 2 3.1 4.9 4.3c2.4 1 2.9.8 3.4.8s1.7-.7 2-1.4c.2-.7.2-1.2.1-1.4l-.4-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/></svg>
+          <span class="lang-ar">إرسال الطلب عبر واتساب</span><span class="lang-fr">Envoyer via WhatsApp</span>
+        </button>
+        <p class="form-note lang-ar">بالضغط على الزر سيفتح واتساب برسالة جاهزة.</p>
+        <p class="form-note lang-fr">Le bouton ouvre WhatsApp avec un message prêt à envoyer.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="733309954_1377143797605910_8797028008840610632_n.jpg" alt="VitaCare">
+      <b>VitaCare Kénitra</b>
+    </div>
+    <p class="footer-slogan"><span class="lang-ar">رعايتكم في منزلكم ♥ راحتكم أولويتنا</span><span class="lang-fr">Des soins professionnels ♥ au cœur de votre domicile</span></p>
+    <div class="footer-links">
+      <a href="#services" class="lang-ar">خدماتنا</a><a href="#services" class="lang-fr">Services</a>
+      <a href="#why" class="lang-ar">لماذا نحن</a><a href="#why" class="lang-fr">Pourquoi nous</a>
+      <a href="#contact" class="lang-ar">اتصل بنا</a><a href="#contact" class="lang-fr">Contact</a>
+      <a href="tel:+212654880254">0654880254</a>
+    </div>
+    <div class="footer-bottom">© 2026 VitaCare Kénitra — Soins Infirmiers à Domicile. <span class="lang-ar">جميع الحقوق محفوظة.</span><span class="lang-fr">Tous droits réservés.</span></div>
+  </div>
+</footer>
+
+<a class="fab" id="waFab" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5H8a1 1 0 0 0-.8.4c-.3.3-1 1-1 2.4s1 2.8 1.2 3 2 3.1 4.9 4.3c2.4 1 2.9.8 3.4.8s1.7-.7 2-1.4c.2-.7.2-1.2.1-1.4l-.4-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/></svg>
+</a>
+
+<script>
+/* ===== Config ===== */
+const WA_NUMBER = "212654880254"; // Rachid: le numéro WhatsApp au format international
+
+/* ===== Language toggle ===== */
+const htmlEl = document.documentElement;
+const langBtns = document.querySelectorAll('.lang-toggle button');
+function setLang(lang){
+  htmlEl.lang = lang;
+  htmlEl.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  try{ localStorage.setItem('vc_lang', lang); }catch(e){}
+}
+langBtns.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+try{ const saved = localStorage.getItem('vc_lang'); if(saved) setLang(saved); }catch(e){}
+
+/* ===== Mobile menu ===== */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+/* ===== WhatsApp generic links ===== */
+function waLink(msg){ return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`; }
+const genericMsg = () => htmlEl.lang === 'ar'
+  ? "السلام عليكم، أرغب في طلب زيارة تمريضية في المنزل مع VitaCare. 🙏"
+  : "Bonjour VitaCare, je souhaite demander une visite de soins infirmiers à domicile. 🙏";
+['waFab','waSocial'].forEach(id => {
+  const el = document.getElementById(id);
+  if(el){ el.href = waLink(genericMsg()); el.addEventListener('mouseenter', () => el.href = waLink(genericMsg())); }
+});
+
+/* ===== CTA buttons -> scroll to the order form + focus the name field ===== */
+document.querySelectorAll('.js-to-form').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const form = document.getElementById('reserver');
+    form.scrollIntoView({behavior:'smooth', block:'center'});
+    form.classList.add('flash');
+    setTimeout(() => form.classList.remove('flash'), 1200);
+    setTimeout(() => { const n = document.getElementById('fName'); if(n) n.focus({preventScroll:true}); }, 650);
+    navLinks.classList.remove('open'); // close mobile menu if open
+  });
+});
+
+/* ===== Order form -> WhatsApp ===== */
+document.getElementById('waForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const ar = htmlEl.lang === 'ar';
+  const name = document.getElementById('fName').value.trim();
+  const sel = document.getElementById('fService');
+  const opt = sel.options[sel.selectedIndex];
+  const service = ar ? opt.dataset.ar : opt.dataset.fr;
+  const addr = document.getElementById('fAddr').value.trim();
+  const msg = document.getElementById('fMsg').value.trim();
+  let text;
+  if(ar){
+    text = `السلام عليكم VitaCare 👋\nأرغب في طلب زيارة تمريضية:\n• الاسم: ${name}\n• الخدمة: ${service}` + (addr?`\n• العنوان: ${addr}`:'') + (msg?`\n• تفاصيل: ${msg}`:'') + `\nشكراً 🙏`;
+  } else {
+    text = `Bonjour VitaCare 👋\nJe souhaite une visite de soins :\n• Nom : ${name}\n• Soin : ${service}` + (addr?`\n• Adresse : ${addr}`:'') + (msg?`\n• Détails : ${msg}`:'') + `\nMerci 🙏`;
+  }
+  window.open(waLink(text), '_blank');
+});
+</script>
+</body>
+</html>
