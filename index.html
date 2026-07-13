@@ -207,7 +207,14 @@ h1 .hl{color:var(--teal);position:relative;white-space:nowrap}
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
   transition:transform .25s, box-shadow .25s, border-color .25s;position:relative;overflow:hidden;
 }
-.card::before{content:"";position:absolute;inset-inline-start:0;top:0;height:100%;width:4px;background:var(--teal);transform:scaleY(0);transform-origin:top;transition:.3s}
+/* background photo + readable white wash (revealed more on hover) */
+.card-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;transition:transform .6s ease}
+.card::after{content:"";position:absolute;inset:0;z-index:1;transition:background .35s;
+  background:linear-gradient(160deg,rgba(255,255,255,.82),rgba(255,255,255,.90) 55%,rgba(255,255,255,.95))}
+.card:hover .card-bg{transform:scale(1.07)}
+.card:hover::after{background:linear-gradient(160deg,rgba(255,255,255,.60),rgba(255,255,255,.78) 55%,rgba(255,255,255,.88))}
+.card>.ic,.card>h3,.card>p{position:relative;z-index:2}
+.card::before{content:"";position:absolute;inset-inline-start:0;top:0;height:100%;width:4px;z-index:2;background:var(--teal);transform:scaleY(0);transform-origin:top;transition:.3s}
 .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
 .card:hover::before{transform:scaleY(1)}
 .card .ic{
@@ -508,54 +515,63 @@ footer{background:#0a2540;color:#fff;padding:44px 0 26px;text-align:center}
 
     <div class="cards">
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-1.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="m18 2 4 4M17 7l3-3M11 21l-4-4m3-3-6 6M14 4l6 6-8 8-6-6 8-8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3 class="lang-ar">الحقن بجميع أنواعها</h3><h3 class="lang-fr">Injections à domicile</h3>
         <p class="lang-ar">حقن عضلية ووريدية وتحت الجلد حسب الوصفة الطبية، بأدوات معقمة.</p>
         <p class="lang-fr">Injections IM, IV et sous-cutanées selon prescription, avec matériel stérile.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-2.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-3-3v6M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
         <h3 class="lang-ar">تغيير الضمادات والعناية بالجروح</h3><h3 class="lang-fr">Pansements & soins de plaies</h3>
         <p class="lang-ar">تنظيف الجروح، تغيير الضمادات ومتابعة الالتئام لتفادي المضاعفات.</p>
         <p class="lang-fr">Nettoyage, réfection des pansements et suivi de la cicatrisation.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-3.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 2v6l-3.6 6.2A2 2 0 0 0 7 17h10a2 2 0 0 0 1.7-3L15 8V2M8 2h8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3 class="lang-ar">سحب عينات الدم للتحاليل</h3><h3 class="lang-fr">Prélèvements sanguins</h3>
         <p class="lang-ar">سحب الدم من المنزل للتحاليل المخبرية دون عناء التنقل.</p>
         <p class="lang-fr">Prise de sang à domicile pour vos analyses, sans vous déplacer.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-4.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3 class="lang-ar">متابعة العلامات الحيوية</h3><h3 class="lang-fr">Suivi diabète & tension</h3>
         <p class="lang-ar">قياس الضغط، السكر والنبض ومتابعة منتظمة لحالتكم الصحية.</p>
         <p class="lang-fr">Contrôle de la tension, glycémie et pouls avec suivi régulier.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-5.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
         <h3 class="lang-ar">القسطرة البولية</h3><h3 class="lang-fr">Sonde urinaire</h3>
         <p class="lang-ar">تركيب وتغيير القسطرة البولية بناءً على وصفة طبية وبتعقيم كامل.</p>
         <p class="lang-fr">Pose et changement de sonde urinaire sur prescription, en asepsie.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-6.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2 6 4-12 2 6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3 class="lang-ar">الوقاية من قرح الفراش</h3><h3 class="lang-fr">Prévention des escarres</h3>
         <p class="lang-ar">عناية خاصة بالمرضى طريحي الفراش للوقاية من التقرحات ومعالجتها.</p>
         <p class="lang-fr">Soins spécifiques pour les patients alités afin de prévenir les escarres.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-7.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
         <h3 class="lang-ar">مرافقة ورعاية كبار السن</h3><h3 class="lang-fr">Accompagnement des seniors</h3>
         <p class="lang-ar">رعاية يومية وإنسانية لكبار السن داخل المنزل مع الاهتمام والاستماع.</p>
         <p class="lang-fr">Accompagnement quotidien et humain des personnes âgées à domicile.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-8.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3 class="lang-ar">متابعة ما بعد العمليات</h3><h3 class="lang-fr">Suivi post-opératoire</h3>
         <p class="lang-ar">متابعة المرضى بعد العمليات الجراحية لضمان تعافٍ آمن وسريع.</p>
         <p class="lang-fr">Suivi des patients après chirurgie pour une convalescence sûre.</p>
       </div>
       <div class="card">
+        <div class="card-bg" style="background-image:url('service-9.jpg')"></div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-9.3-8.4A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6.6C19 16.6 12 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <h3 class="lang-ar">توعية وإرشاد الأسرة</h3><h3 class="lang-fr">Conseils à la famille</h3>
         <p class="lang-ar">نرشد أفراد الأسرة حول كيفية العناية بالمريض بين زياراتنا.</p>
