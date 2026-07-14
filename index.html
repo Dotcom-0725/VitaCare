@@ -316,6 +316,15 @@ h1 .hl{color:var(--teal);position:relative;white-space:nowrap}
 .gallery a{border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);aspect-ratio:1;transition:.25s;border:1px solid var(--line)}
 .gallery a:hover{transform:scale(1.03);box-shadow:var(--shadow)}
 .gallery img{width:100%;height:100%;object-fit:cover}
+/* social tiles (follow us) */
+.social-tiles{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
+.social-tile{width:160px;height:160px;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#fff;font-weight:800;font-size:1.02rem;box-shadow:var(--shadow);transition:transform .25s, box-shadow .25s}
+.social-tile:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 26px 56px -20px rgba(14,46,77,.45)}
+.social-tile svg{width:46px;height:46px}
+.social-tile.fb{background:linear-gradient(135deg,#1877F2,#0a4fb5)}
+.social-tile.ig{background:linear-gradient(135deg,#f9ce34,#ee2a7b 45%,#6228d7)}
+.social-tile.map{background:linear-gradient(135deg,var(--teal-2),var(--teal))}
+@media(max-width:520px){.social-tile{width:132px;height:132px;border-radius:22px;font-size:.95rem}.social-tile svg{width:40px;height:40px}}
 
 /* ---------- Quote ---------- */
 .quote{background:linear-gradient(120deg,var(--teal),var(--teal-2));color:#fff;text-align:center;padding:70px 0}
@@ -434,7 +443,7 @@ footer{background:#0a2540;color:#fff;padding:44px 0 26px;text-align:center}
       <a href="#pricing" class="lang-ar">الأسعار</a><a href="#pricing" class="lang-fr">Tarifs</a>
       <a href="#why" class="lang-ar">لماذا نحن</a><a href="#why" class="lang-fr">Pourquoi nous</a>
       <a href="#steps" class="lang-ar">كيف نعمل</a><a href="#steps" class="lang-fr">Comment ça marche</a>
-      <a href="#gallery" class="lang-ar">أعمالنا</a><a href="#gallery" class="lang-fr">Galerie</a>
+      <a href="#gallery" class="lang-ar">تابعونا</a><a href="#gallery" class="lang-fr">Suivez-nous</a>
       <a href="#contact" class="lang-ar">اتصل بنا</a><a href="#contact" class="lang-fr">Contact</a>
     </nav>
 
@@ -868,14 +877,25 @@ footer{background:#0a2540;color:#fff;padding:44px 0 26px;text-align:center}
 <section class="sec" id="gallery" style="background:var(--bg-soft)">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-tag lang-ar">من صفحاتنا</span><span class="sec-tag lang-fr">Notre univers</span>
-      <h2 class="lang-ar">نصائح ورعاية نشاركها معكم كل يوم</h2><h2 class="lang-fr">Des conseils et du soin, partagés chaque jour</h2>
-      <p class="lang-ar">تابعونا على مواقع التواصل لمزيد من النصائح الصحية.</p>
-      <p class="lang-fr">Suivez-nous sur les réseaux pour plus de conseils santé.</p>
+      <span class="sec-tag lang-ar">تابعونا</span><span class="sec-tag lang-fr">Suivez-nous</span>
+      <h2 class="lang-ar">تابعونا وتواصلوا معنا مباشرة</h2><h2 class="lang-fr">Suivez-nous et restons en contact</h2>
+      <p class="lang-ar">لمزيد من النصائح الصحية والعروض، تابعونا على مواقع التواصل أو تفضّلوا بزيارتنا.</p>
+      <p class="lang-fr">Plus de conseils et d'offres : suivez-nous sur les réseaux ou retrouvez-nous sur la carte.</p>
     </div>
-    <div class="gallery">
-      <a href="https://www.facebook.com/share/1EwpqwcTvL/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="745393870_122108310573384318_6431892349766356523_n.jpg" alt="نصائح صحية VitaCare" loading="lazy"></a>
-      <a href="https://www.facebook.com/share/1EwpqwcTvL/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="734644867_122100591249384318_8831846325367251993_n.jpg" alt="رعاية كبار السن" loading="lazy"></a>
+    <div class="social-tiles">
+      <a class="social-tile fb" href="https://www.facebook.com/share/1EwpqwcTvL/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg>
+        <span class="lang-ar">فيسبوك</span><span class="lang-fr">Facebook</span>
+      </a>
+      <a class="social-tile ig" href="https://www.instagram.com/____vitacare.infirmier" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/></svg>
+        <span class="lang-ar">إنستغرام</span><span class="lang-fr">Instagram</span>
+      </a>
+      <!-- Rachid : remplace ce lien par ta position exacte sur Google Maps -->
+      <a class="social-tile map" href="https://www.google.com/maps/search/?api=1&query=K%C3%A9nitra%2C+Maroc" target="_blank" rel="noopener" aria-label="Localisation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="lang-ar">موقعنا</span><span class="lang-fr">Localisation</span>
+      </a>
     </div>
   </div>
 </section>
